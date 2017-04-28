@@ -4,7 +4,6 @@ also_reload('lib/**/*/')
 also_reload('views/**/*.erb')
 require('./lib/word')
 require('./lib/definition')
-require('pry')
 
 
 get('/') do
