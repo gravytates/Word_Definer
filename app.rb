@@ -20,7 +20,12 @@ post('/word') do
   spelling = params.fetch('spelling')
   @word = Word.new({:spelling => spelling})
   @word.save()
-
   redirect('/')
   erb(:index)
+end
+
+get('/:id') do
+  @word = Word.find(params.fetch('id').to_i)
+  @definitions = Definition.all
+  erb(:word_details)
 end

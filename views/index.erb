@@ -6,7 +6,7 @@
 <ul>
   <% if Word.all != [] %>
     <% @words.each() do |word| %>
-      <li><%= word.spelling() %></li>
+      <li><a href="/<%= word.id() %>"><%= word.spelling() %></a></li>
 
     <% end %>
   <% end %>

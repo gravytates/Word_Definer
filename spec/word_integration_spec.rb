@@ -11,3 +11,10 @@ describe("the word creation path", {:type => :feature}) do
     expect(page).to have_content("Stupendously Awesome")
   end
 end
+
+describe("the word view path", {:type => :feature}) do
+  it("allows user to view definition page of a word") do
+    visit("/1")
+    expect(page).to have_content("yolo")
+  end
+end
