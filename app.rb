@@ -56,3 +56,8 @@ get('/:id') do
   @word = Word.find(params.fetch('id').to_i)
   erb(:word_details)
 end
+
+get('/sort') do
+  @just_words = Word.sort
+  erb(:sort_index)
+end

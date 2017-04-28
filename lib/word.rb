@@ -1,6 +1,7 @@
 class Word
   attr_accessor(:spelling, :picture, :id, :definitions)
   @@words = []
+  @@just_words = []
 
   define_method(:initialize) do |attributes|
     @spelling = attributes.fetch(:spelling)
@@ -37,5 +38,12 @@ class Word
 
   define_singleton_method(:shuffle) do
     @@words.shuffle()
+  end
+
+  define_singleton_method(:sort) do |word|
+    @@words.each() do |word|
+      @@just_words.push(word.spelling())
+    end
+    @@just_words.sort!()
   end
 end
