@@ -3,3 +3,11 @@
 <a href="/word/new">Add New Word</a>
 
 <h3>Here are all of your words:</h3>
+<ul>
+  <% if Word.all != [] %>
+    <% @words.each() do |word| %>
+      <li><%= word.spelling() %></li>
+
+    <% end %>
+  <% end %>
+</ul>
