@@ -1,12 +1,12 @@
 <h1><%= @word.spelling() %></h1>
 
+<% if @word.definitions != [] %>
 <h3>Here are all of your definitions:</h3>
 <ul>
-  <% if @word.definitions != [] %>
-    <% @word.definitions.each() do |definition| %>
-      <li><%= definition.meaning() %></li>
-    <% end %>
+  <% @word.definitions.each() do |definition| %>
+    <%= definition.meaning() %>
   <% end %>
+<% end %>
 </ul>
 
 <a href="/<%= @word.id %>/definition/new">Add New Definition!</a><br>
