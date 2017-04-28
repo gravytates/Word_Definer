@@ -17,4 +17,22 @@ describe("the word view path", {:type => :feature}) do
     visit("/1")
     expect(page).to have_content("yolo")
   end
+
+  it("processes the user input and adds definitions to a word") do
+    visit("/1/definition/new")
+    fill_in("meaning", :with => "terrible phrase")
+    click_button("Add Definition")
+    expect(page).to have_content("Stupendously Awesome")
+  end
+
+  #
+  # it("goes to the new contact page") do
+  #   visit("/contacts/new")
+  #   fill_in("first_name", :with => "John")
+  #   click_button("Add Contact")
+  #   expect(page).to have_content("You've successfully")
+  #   click_link("Back to contact list")
+  #   expect(page).to have_content("John")
+  # end
+
 end
