@@ -8,7 +8,11 @@ require('./lib/definition')
 
 get('/') do
   @words = Word.all
+  erb(:index)
+end
 
+get('/clear') do
+  Word.clear
   erb(:index)
 end
 
