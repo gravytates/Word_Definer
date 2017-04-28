@@ -1,13 +1,17 @@
+<div class="jumbotron">
+  <h1>Stupendously Awesome Word DeFiner!</h1>
+  <hr>
+</div>
 <h1>Word: <b><%= @word.spelling() %></b></h1>
 
 <% if @word.definitions != [] %>
 <h3>Here are all of your definitions:</h3>
 <ul>
   <% @word.definitions.each() do |definition| %>
-    <%= definition.meaning() %>
+    <li> <%= definition.meaning() %></li>
   <% end %>
 <% end %>
 </ul>
 
-<a href="/<%= @word.id %>/definition/new">Add a new Definition for "<%= @word.spelling() %>"!</a><br>
-<a href="/">Back</a>
+<h3><a href="/<%= @word.id %>/definition/new">Add a new Definition for "<%= @word.spelling() %>"!</a></h3>
+<h3><a href="/">Back</a></h3>

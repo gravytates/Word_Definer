@@ -1,4 +1,8 @@
-<h1>Define <em><b>"<%= @word.spelling() %>"</b></em>!</h1>
+<div class="jumbotron">
+  <h1>Stupendously Awesome Word DeFiner!</h1>
+  <hr>
+</div>
+<h1>Define <em><b>"<%= @word.spelling() %>"</b></em></h1>
 
 <form action="/<%= @word.id %>" method="post">
 
@@ -6,5 +10,5 @@
   <input name='word_id' type='hidden' value='<%= @word.id() %>'>
   <textarea placeholder="enter definition here!" name="meaning"></textarea><br>
 
-  <button class="btn btn-info" type="submit">Add Definition</button>
+  <button class="btn btn-danger" type="submit">Add Definition</button>
 </form>
