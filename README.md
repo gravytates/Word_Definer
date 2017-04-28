@@ -5,7 +5,7 @@
 #### By Grady L Shelton
 
 ## Description
-This website for children, allowing them to add words to a list and then for each word add their own unique and possibly zany definitions!
+A website for children. Allows them to add words and pictures together with their own unique and zany definitions! Get hip.
 
 Website can be viewed in browser at https:.herokuapp.com/
 

@@ -1,3 +1,4 @@
+
 body {
   background-color: rgb(141, 210, 214);
   font-family: 'Audiowide', cursive;
@@ -17,9 +18,7 @@ textarea {
 
 a {
   color: yellow;
-}
-
-h1 {
+  text-shadow: 2px 2px black;
 }
 
 .jumbotron {
@@ -36,4 +35,21 @@ h1 {
 #spelling #pic-url {
   padding: 5px;
   margin-bottom: 10px;
+}
+
+#background {
+  background-image: url(../img/icecream2.png);
+  background-size: 20%;
+  height: 102%;
+  width: 102%;
+  top: 0;
+  left: 0;
+  padding-left: 50px;
+  padding-right: 0;
+  margin-right: 0;
+  margin-top: 150px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
 }

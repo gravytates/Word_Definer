@@ -35,13 +35,6 @@ class Word
     @definitions.push(definition)
   end
 
-  define_method(:word_check) do
-    if (self).scan(/^[^aeiouy]+$|^$|(.)\1{2,}|q([^u])/i) != []
-      result = "Hmm, are you sure that's a word?"
-    end
-    result
-  end
-
   define_singleton_method(:shuffle) do
     @@words.shuffle()
   end
