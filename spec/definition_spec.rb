@@ -28,10 +28,18 @@ describe(Definition) do
   end
 
   describe(".clear") do
-  it("empties out all of the saved definitions") do
-    Definition.new({:meaning => 'a state of mind where someone is disoriented and potentially hyper aware of their surroundings'})
-    Definition.clear()
-    expect(Definition.all()).to(eq([]))
+    it("empties out all of the saved definitions") do
+      Definition.new({:meaning => 'a state of mind where someone is disoriented and potentially hyper aware of their surroundings'})
+      Definition.clear()
+      expect(Definition.all()).to(eq([]))
+    end
   end
-end
+
+  describe('#id') do
+    it('returns definition id') do
+      test_definition = Definition.new({:meaning => 'a state of mind where someone is disoriented and potentially hyper aware of their surroundings'})
+      test_definition.save()
+      expect(test_definition.id()).to(eq(1))
+    end
+  end
 end
