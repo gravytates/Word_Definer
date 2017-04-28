@@ -7,6 +7,7 @@ describe("the word creation path", {:type => :feature}) do
   it("processes the user input and adds word to words array") do
     visit("/word/new")
     fill_in("spelling", :with => "yolo")
+    fill_in("picture", :with => "dogpic")
     click_button("Add Word")
     expect(page).to have_content("Stupendously Awesome")
   end

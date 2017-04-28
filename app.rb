@@ -18,7 +18,8 @@ end
 
 post('/word') do
   spelling = params.fetch('spelling')
-  @word = Word.new({:spelling => spelling})
+  picture = params.fetch('picture')
+  @word = Word.new({:spelling => spelling, :picture => picture})
   @word.save()
   redirect('/')
   erb(:index)

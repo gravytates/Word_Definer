@@ -1,9 +1,10 @@
 class Word
-  attr_accessor(:spelling, :id, :definitions)
+  attr_accessor(:spelling, :picture, :id, :definitions)
   @@words = []
 
   define_method(:initialize) do |attributes|
     @spelling = attributes.fetch(:spelling)
+    @picture = attributes.fetch(:picture)
     @id = @@words.length().+(1)
     @definitions = []
   end
