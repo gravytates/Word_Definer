@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1>Stupendously Awesome Word DeFiner!</h1>
+  <hr>
+</div>
+
+<h1>Here are all of your words and their definitions!</h1>
+<% if Word.all != [] %>
+<ul>
+  <% @words.each() do |word| %>
+    <li><h3><a href="/<%= word.id() %>"><%= word.spelling() %></a></h3>
+      <% if word.definitions != [] %>
+        <% word.definitions.each() do |definition| %>
+          <ul>
+            <li> <%= definition.meaning() %></li>
+          </ul>
+        <% end %>
+      <% end %>
+    </li>
+
+  <% end %>
+<% end %>
+
+<h3><a href="/">Back</a></h3>

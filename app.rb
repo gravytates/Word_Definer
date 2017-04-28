@@ -16,6 +16,11 @@ get('/word/new') do
   erb(:add_word)
 end
 
+get('/all_words') do
+  @words = Word.all
+  erb(:all_words_definitions)
+end
+
 post('/word') do
   spelling = params.fetch('spelling')
   picture = params.fetch('picture')

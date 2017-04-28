@@ -32,4 +32,9 @@ end
     click_button("Add Definition")
     expect(page).to have_content("Stupendously Awesome")
   end
+
+  it("processes the user input and adds definitions to a word") do
+    visit("/all_words")
+    expect(page).to have_content("yolo")
+  end
 end
