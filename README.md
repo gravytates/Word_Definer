@@ -18,6 +18,8 @@ Website can be viewed in browser at https:.herokuapp.com/
 |Program allows user to add a definition from a word's definition page|user inputs "an awesome jewel!" in the 'add definition' page|result: definition page displays "an awesome jewel!"|
 |Program allows user to add MULTIPLE definitions from a word's definition page|user inputs "an awesome programming langauge!...apparently"|result: definition page displays the first definition, "an awesome jewel!", and the second definition, "an awesome programming langauge!...apparently"|
 |Program allows user to add a picture via url link to display with a word|user inputs "dog" for word and "example.jpg" for url|result: dog and image appear together in definition page **(screenshot below)**|
+
+## Word Screenshot
 ![Image of Screenshot](public/img/screenshot.png)
 
 ## Setup/Installation Requirements
