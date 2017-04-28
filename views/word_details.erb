@@ -1,4 +1,4 @@
-<h1><%= @word.spelling() %></h1>
+<h1>Word: <b><%= @word.spelling() %></b></h1>
 
 <% if @word.definitions != [] %>
 <h3>Here are all of your definitions:</h3>
@@ -9,5 +9,5 @@
 <% end %>
 </ul>
 
-<a href="/<%= @word.id %>/definition/new">Add New Definition!</a><br>
+<a href="/<%= @word.id %>/definition/new">Add a new Definition for "<%= @word.spelling() %>"!</a><br>
 <a href="/">Back</a>

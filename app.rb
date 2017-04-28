@@ -36,7 +36,6 @@ post('/:id') do
   @definition.save()
   @word = Word.find(params.fetch('id').to_i)
   @word.add_definition(@definition)
-binding.pry
   redirect('/')
   erb(:index)
 end

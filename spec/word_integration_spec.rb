@@ -24,15 +24,4 @@ describe("the word view path", {:type => :feature}) do
     click_button("Add Definition")
     expect(page).to have_content("Stupendously Awesome")
   end
-
-  #
-  # it("goes to the new contact page") do
-  #   visit("/contacts/new")
-  #   fill_in("first_name", :with => "John")
-  #   click_button("Add Contact")
-  #   expect(page).to have_content("You've successfully")
-  #   click_link("Back to contact list")
-  #   expect(page).to have_content("John")
-  # end
-
 end

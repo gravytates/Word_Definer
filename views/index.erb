@@ -2,11 +2,15 @@
 
 <a href="/word/new">Add New Word</a>
 
-<h3>Here are all of your words:</h3>
-<ul>
   <% if Word.all != [] %>
+  <h3>Here are all of your words:</h3>
+  <ul>
     <% @words.each() do |word| %>
-      <li><a href="/<%= word.id() %>"><%= word.spelling() %></a></li>
+      <li><h3><a href="/<%= word.id() %>"><%= word.spelling() %></a></h3>
+        <% if word.definitions != [] %>
+        Number of definitions: <%= word.definitions.length %>
+        <% end %>
+      </li>
 
     <% end %>
   <% end %>
