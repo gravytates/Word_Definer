@@ -17,8 +17,8 @@ Website can be viewed in browser at https:.herokuapp.com/
 |Program allows user to click on each word to see its definition(s)|user clicks "ruby"|result: taken to its definition page|
 |Program allows user to add a definition from a word's definition page|user inputs "an awesome jewel!" in the 'add definition' page|result: definition page displays "an awesome jewel!"|
 |Program allows user to add MULTIPLE definitions from a word's definition page|user inputs "an awesome programming langauge!...apparently"|result: definition page displays the first definition, "an awesome jewel!", and the second definition, "an awesome programming langauge!...apparently"|
-|Program allows user to add a picture via url link to display with a word|user inputs "dog" for word and "https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg" for url|result: dog and image appear together in definition page **(screenshot below)**|
-![Image of Screenshot](/img/screenshot.png)
+|Program allows user to add a picture via url link to display with a word|user inputs "dog" for word and "example.jpg" for url|result: dog and image appear together in definition page **(screenshot below)**|
+![Image of Screenshot](public/img/screenshot.png)
 
 ## Setup/Installation Requirements
 
