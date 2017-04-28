@@ -7,7 +7,7 @@
 ## Description
 A website for children. Allows them to add words and pictures together with their own unique and zany definitions! Get hip.
 
-Website can be viewed in browser at https:.herokuapp.com/
+Website can be viewed in browser at https://sleepy-tundra-58169.herokuapp.com
 
 ## Specifications
 
