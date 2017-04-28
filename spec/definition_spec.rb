@@ -42,4 +42,14 @@ describe(Definition) do
       expect(test_definition.id()).to(eq(1))
     end
   end
+
+  describe('.find') do
+    it('returns definition by id') do
+      test_definition = Definition.new({:meaning => 'a state of mind where someone is disoriented and potentially hyper aware of their surroundings'})
+      test_definition.save()
+      test_definition2 = Definition.new({:meaning => 'where the magic happens'})
+      test_definition2.save()
+      expect(Definition.find(test_definition.id())).to(eq(test_definition))
+    end
+  end
 end
