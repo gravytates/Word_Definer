@@ -1,11 +1,11 @@
-#
+# Word Definer
 
 ##### Ruby - Week 2
 
 #### By Grady L Shelton
 
 ## Description
-This website can evaluate user inputs to determine
+This website for kids can allow them to add words to a list and then for each word add their own unique and possibly zany definitions!
 
 Website can be viewed in browser at https:.herokuapp.com/
 
@@ -13,13 +13,10 @@ Website can be viewed in browser at https:.herokuapp.com/
 
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
-|Program can check if two words are anagrams|user inputs "ruby" and "bury"|result: these words are anagrams!|
-|Program can account for different title cases|user inputs "Ruby" and "BurY"|result: these words are anagrams!|
-|Program can check if two words are also palindromes|user inputs "leper" and "repel"|result: these words are palindromes!|
-|Program can check if two words are partial anagrams|user inputs "hello" and "hebbo"|result: these words are partial anagrams!|
-|Program can check if input strings are words|user inputs "kzf" and "kzf"|result: no words found|
-|Program can check if inputs are antigrams|user inputs "hi" and "bye"|result: these words are antigrams!|
-|Program can check for multiple words to see if they are anagrams, palindromes or anti grams|user inputs "how fun!" and "now huf"|result: these words are anagrams!|
+|Program allows user to add a new word to a list|user inputs "ruby" in 'add word' page|result: homepage displays "ruby"|
+|Program allows user to click on each word to see its definition(s)|user clicks "ruby"|result: taken to its definition page|
+|Program allows user to add a definition from a word's definition page|user inputs "an awesome jewel!" in the 'add definition' page|result: definition page displays "an awesome jewel!"|
+|Program allows user to add MULTIPLE definitions from a word's definition page|user inputs "an awesome programming langauge!...apparently"|result: definition page displays the first definition, "an awesome jewel!", and the second definition, "an awesome programming langauge!...apparently"|
 
 ## Setup/Installation Requirements
 
