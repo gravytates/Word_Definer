@@ -1,0 +1,10 @@
+<h1>Define <%= @word.spelling() %>!</h1>
+
+<form action="/<%= @word.id %>" method="post">
+
+  <label for="address">What's your definition??</label>
+  <input name='word_id' type='hidden' value='<%= @word.id() %>'> <!-- Hidden div to tye id to email... maybe?? -->
+  <input placeholder="meaning" name="meaning">
+
+  <button type="submit">Add Definition</button>
+</form>

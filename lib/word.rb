@@ -1,5 +1,5 @@
 class Word
-  attr_accessor(:spelling, :id)
+  attr_accessor(:spelling, :id, :definitions)
   @@words = []
 
   define_method(:initialize) do |attributes|

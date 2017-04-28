@@ -24,8 +24,24 @@ post('/word') do
   erb(:index)
 end
 
+
+get('/:id/definition/new') do
+  @word = Word.find(params.fetch('id').to_i)
+  erb(:add_definition)
+end
+
+post('/:id') do
+  meaning = params.fetch('meaning')
+  @definition = Definition.new({:meaning => meaning})
+  @definition.save()
+  @word = Word.find(params.fetch('id').to_i)
+  @word.add_definition(@definition)
+  redirect('/')
+  erb(:index)
+end
+
 get('/:id') do
   @word = Word.find(params.fetch('id').to_i)
-  @definitions = Definition.all
+# binding.pry
   erb(:word_details)
 end

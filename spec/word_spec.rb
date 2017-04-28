@@ -13,6 +13,17 @@ describe(Word) do
     end
   end
 
+  describe('#definitions') do
+    it('will display a word definition') do
+      test_word = Word.new({:spelling => 'frazzles'})
+      test_word.save()
+      test_definition = Definition.new({:meaning => 'a state of mind where someone is disoriented and potentially hyper aware of their surroundings'})
+      test_definition.save()
+      test_word.add_definition(test_definition)
+      expect((test_word.definitions.meaning)).to(eq('a state of mind where someone is disoriented and potentially hyper aware of their surroundings'))
+    end
+  end
+
   describe("#save") do
     it("adds a word to the array of saved words") do
       test_word = Word.new({:spelling => 'frazzles'})
