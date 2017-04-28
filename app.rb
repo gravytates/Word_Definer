@@ -9,6 +9,7 @@ require('pry')
 
 get('/') do
   @words = Word.all
+
   erb(:index)
 end
 
@@ -19,6 +20,11 @@ end
 get('/all_words') do
   @words = Word.all
   erb(:all_words_definitions)
+end
+
+get('/random') do
+  @word = Word.shuffle[0]
+  erb(:word_details)
 end
 
 post('/word') do

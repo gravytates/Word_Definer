@@ -41,4 +41,8 @@ class Word
     end
     result
   end
+
+  define_singleton_method(:shuffle) do
+    @@words.shuffle()
+  end
 end

@@ -35,6 +35,6 @@ end
 
   it("processes the user input and adds definitions to a word") do
     visit("/all_words")
-    expect(page).to have_content("yolo")
+    expect(page).to have_content("terrible phrase")
   end
 end
