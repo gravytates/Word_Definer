@@ -6,11 +6,13 @@ body {
 
 input {
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 textarea {
   color: black;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -33,5 +35,5 @@ h1 {
 
 #spelling #pic-url {
   padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
