@@ -3,6 +3,7 @@
 ##### Ruby - Week 2
 
 #### By Grady L Shelton
+![Homepage screenshot](public/img/word-definer-home.png)
 
 ## Description
 A website for children. Allows them to add words and pictures together with their own unique and zany definitions! Get hip.
